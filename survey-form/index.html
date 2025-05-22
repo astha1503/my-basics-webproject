@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      survey-form
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Mental health survey</h1>
+      <p id="description">To Help for you and your famliy </p>
+    </header>
+    <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label"for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="Enter your Email" required>
+    </div>
+    <div class="form-group">
+      <label id="number-label">Number</label>
+      <input id="number" name="number"  type="number" min="5" max="15" placeholder="Enter your number">
+    </div>
+    <div class="form-group">
+      <p>role in company</p>
+      <select id="dropdown" name ="role required">
+        <option>select any one</option>
+        <option>education</option>
+        <option>ad of brand</option>
+        <option>funder</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Do you recommend it to your friend?</p>
+      <label>
+        <input type="radio" name="recommend" value="Definitely" checked> Definitely
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="Maybe"> Maybe
+      </label>
+    </div>
+    <div class="form-group">
+      <p>Are you sure about your recommendation?</p>
+      <label>
+        <input type="radio" name="sure" value="Yes" checked> Yes
+      </label>
+      <label>
+        <input type="radio" name="sure" value="No"> No
+      </label>
+    </div>
+    
+    <div>
+      <p>why are you here </p>
+      <label>
+        <input type="checkbox" value="expolor" >expolor
+      </label>
+      <label>
+        <input type="checkbox" value="random" >random
+      </label>
+      <label>
+        <input type="checkbox" value="for-fun" >for fun
+      </label>
+    </div>
+    <div class="form-group">
+      <p>Any command or Suggestion?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...." >
+      </textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    </form>
+  </body>
+</html>
